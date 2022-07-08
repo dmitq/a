@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="link_block">
+    <div class="header_box">
+        <h1 class="color_header">Paste your link here</h1>
+        <p class="about hidden">Сервис сокращения ссылок<br>ашфзвгафвафвпафвафвша</p>
+    </div>
+    <form action="#" method="post">
+        <input type="text" name="url">
+        <input type="submit" value="Short!">
+</div>
+<div class="ready_link">
+    {% if url %}
+    <p>
+        Ready: <a href={{url}} id="myInput">{{url}}</a>
+    </p>
+    {% endif %}
+    {% for msg in get_flashed_messages() %}
+    <div class="flash">{{msg}}</div>
+    {% endfor %}
+</div>
+{% endblock %}
