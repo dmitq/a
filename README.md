@@ -1,4 +1,4 @@
-#Flask url shortener
+Flask url shortener
 
-Веб-приложение для сокращения ссылок. /
-Web application for shortening links.
+Веб-приложение для сокращения ссылок /
+Web application for shortening links
