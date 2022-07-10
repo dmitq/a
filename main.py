@@ -17,10 +17,5 @@ def index():
     return render_template('home.html', url=request.args.get('url'))
 
 
-# @app.route('/ready')
-# def ready():
-#     return render_template('ready_url.html', url=request.args.get('url'))
-
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False, host='0.0.0.0')
